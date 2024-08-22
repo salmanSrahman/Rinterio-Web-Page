@@ -61,11 +61,11 @@
             </div>
             <div class="hidden md:w-6/12 lg:block">
               <ul class="flex justify-center space-x-8 text-base text-secondary font-extrabold">
-                <li><a href="" class="hover:text-third">Home</a></li>
-                <li><a href="" class="hover:text-third">Services</a></li>
-                <li><a href="" class="hover:text-third">Portfolio</a></li>
-                <li><a href="" class="hover:text-third">Blogs</a></li>
-                <li><a href="" class="hover:text-third">Contact Us</a></li>
+                <li class="cursor-pointer"><a href="#home" class="hover:text-third cursor-pointer inline-block">Home</a></li>
+                <li><a href="#services" class="hover:text-third cursor-pointer">Services</a></li>
+                <li><a href="#collections" class="hover:text-third cursor-pointer">Collections</a></li>
+                <li><a href="#faq" class="hover:text-third cursor-pointer">FAQ</a></li>
+                <li><a href="#contact" class="hover:text-third cursor-pointer">Contact Us</a></li>
               </ul>
             </div>
             <div class="hidden md:w-8/12 lg:w-4/12 md:flex justify-center  space-x-1 md:space-x-2 items-center">
@@ -83,7 +83,7 @@
       <!-- nav part end -->
 
        <!-- hero banner part start-->
-       <div class="text-center pb-8">
+       <div id="home" class="text-center pb-8">
         <img src="images/banner.png" alt="banner_pic" class="mx-auto">
         <h1 class="text-primary font-extrabold text-28 md:text-64 max-w-[1064px] mb-6">Transform Your Home with Elegant Decor Pieces.</h1>
         <p class="text-secondary leading-26 textsm md:text-base">Explore our curated selection of stylish and functional decor items to elevate your living spaces</p>
@@ -99,7 +99,7 @@
 
   <main>
   <!-- about us part start -->
-    <section class="about_us bg-ash py-8 md:py-24">
+    <section class="about_us bg-ash py-8 md:py-16">
       <div class="max-w-container mx-auto p-2.5">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 gap-x-9 items-center">
           <!-- about us text -->
@@ -145,7 +145,7 @@
   <!-- about us part end -->
 
   <!-- work progress part start -->
-   <section class="bg-ash py-8 md:py-24">
+   <section id="services" class="bg-ash py-8 md:py-16">
         <div class="container max-w-container mx-auto p-2.5">
 
           <!-- work progress titlee -->
@@ -190,7 +190,7 @@
   <!-- work progress part end  -->
 
   <!-- portfolio part start -->
-   <section class="bg-ash py-8 md:py-24">
+   <section id="collections" class="bg-ash py-8 md:py-16">
     <div class="max-w-container mx-auto p-2.5">
 
       <!-- portfolio tittle -->
@@ -249,43 +249,8 @@
    </section>
   <!-- portfolio part end -->
 
-  <!-- discuss part start -->
-   <section class="bg-[url('images/bg.jpg')] bg-center bg-n-repeat bg-cover py-8 md:py-24">
-    <div class="container max-w-container mx-auto p-2.5">
-
-      <!-- portfolio titlee -->
-      <button class="py-2 px-5 rounded-[32px] bg-warning/20 flex items-center mt-8 text-center mb-4 text-secondary mx-auto">
-        <i class="fa-solid fa-arrow-right-long text-xl text-primary mr-1"></i>
-        <span class="text-base md:text-lg font-bold md:font-extrabold text-primary">Let’s Connect</span>
-      </button>
-      <h1 class="md:text-40 text-2xl font-bold text-primary mt-4 mb-6 text-center">Let’s Transform Your Space Together.</h1>
-      <p class="max-w-[678px] text-secondary text-base font-medium mx-auto leading-26 text-center">We'd love to help you create your dream space. Whether it's a cozy home or a chic office, our team is ready to bring your vision to life. Fill out the form below, and we'll get in touch with you to discuss your project details.s.</p>
-
-      <div class="mt-6 md:mt-8 ">
-        <form >
-         <div class="grid grid-cols-1 md:grid-cols-2 box-border ">
-          <input type="text" placeholder="First Name*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6 mr-6">
-          
-          <input type="text" placeholder="Last Name*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6">
-
-          <input type="number" placeholder="Phone Number*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6 mr-6">
-          
-          <input type="email" placeholder="Email Number*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6">
-         </div>
-          <textarea rows="10"  placeholder="Write your message here" class="p-5 border border-solid border-[#E9E9E9] rounded-3xl bg-white w-full mb-6 resize-none"></textarea>
-          <button class="py-3 px-5 w-full text-center rounded-[32px] bg-warning flex space-x-2 items-center justify-center">
-            <span class="text-xl font-extrabold text-primary">Send Inquiry</span>
-            <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center rounded-full bg-[#1C1C1C] -rotate-45 text-white"></i>
-          </button>
-        </form>
-      </div>
-
-    </div>
-   </section>
-  <!-- discuss part end -->
-
    <!-- faq part start -->
-    <section class=" py-8 md:py-24">
+    <section id="faq" class=" py-8 md:py-16">
       <div class="max-w-container mx-auto p-2.5">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 gap-x-9">
           <!-- faq text -->
@@ -337,9 +302,43 @@
     </section>
    <!-- faq part end -->
 
+   <!-- discuss part start -->
+   <section id="contact" class="bg-[url('images/bg.jpg')] bg-center bg-n-repeat bg-cover py-8 md:py-16">
+    <div class="container max-w-container mx-auto p-2.5">
+
+      <!-- portfolio titlee -->
+      <button class="py-2 px-5 rounded-[32px] bg-warning/20 flex items-center mt-8 text-center mb-4 text-secondary mx-auto">
+        <i class="fa-solid fa-arrow-right-long text-xl text-primary mr-1"></i>
+        <span class="text-base md:text-lg font-bold md:font-extrabold text-primary">Let’s Connect</span>
+      </button>
+      <h1 class="md:text-40 text-2xl font-bold text-primary mt-4 mb-6 text-center">Let’s Transform Your Space Together.</h1>
+      <p class="max-w-[678px] text-secondary text-base font-medium mx-auto leading-26 text-center">We'd love to help you create your dream space. Whether it's a cozy home or a chic office, our team is ready to bring your vision to life. Fill out the form below, and we'll get in touch with you to discuss your project details.s.</p>
+
+      <div class="mt-6 md:mt-8 ">
+        <form >
+         <div class="grid grid-cols-1 md:grid-cols-2 box-border ">
+          <input type="text" placeholder="First Name*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6 mr-6">
+          
+          <input type="text" placeholder="Last Name*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6">
+
+          <input type="number" placeholder="Phone Number*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6 mr-6">
+          
+          <input type="email" placeholder="Email Number*" class="p-5 border border-solid border-[#E9E9E9] rounded-[64px] bg-white  mb-6">
+         </div>
+          <textarea rows="10"  placeholder="Write your message here" class="p-5 border border-solid border-[#E9E9E9] rounded-3xl bg-white w-full mb-6 resize-none"></textarea>
+          <button class="py-3 px-5 w-full text-center rounded-[32px] bg-warning flex space-x-2 items-center justify-center">
+            <span class="text-xl font-extrabold text-primary">Send Inquiry</span>
+            <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center rounded-full bg-[#1C1C1C] -rotate-45 text-white"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+   </section>
+  <!-- discuss part end -->
    </main>
 
-   <footer class="bg-[#1C1C1C] py-8 md:py-24">
+   <footer class="bg-[#1C1C1C] py-8 md:py-16">
     <div class="max-w-container mx-auto p-2.5">
       <div class="flex gap-x-1 justify-center">
         <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center bg-warning rounded-full -rotate-45 text-xl"></i>
@@ -348,11 +347,11 @@
       <p class="max-w-[650px] mx-auto text-center text-base leading-26 font-medium text-third mt-4 mb-12">Your go-to destination for premium home decor pieces that bring style and comfort to any space</p>
       <div>
         <ul class="flex flex-col md:flex-row justify-center md:justify-around text-base text-[#E9E9E9] font-extrabold text-center space-y-8 md:space-y-0">
-          <li><a href="" class="hover:text-third">Home</a></li>
-          <li><a href="" class="hover:text-third">Services</a></li>
-          <li><a href="" class="hover:text-third">Portfolio</a></li>
-          <li><a href="" class="hover:text-third">Blogs</a></li>
-          <li><a href="" class="hover:text-third">Contact</a></li>
+          <li><a href="#home" class="hover:text-third">Home</a></li>
+          <li><a href="#services" class="hover:text-third">Services</a></li>
+          <li><a href="#collections" class="hover:text-third">Collections</a></li>
+          <li><a href="#faq" class="hover:text-third">FAQ</a></li>
+          <li><a href="#contact" class="hover:text-third">Contact</a></li>
       </div>
       <button class="py-3 px-5 rounded-[32px] bg-warning flex space-x-2 justify-center mx-auto mt-12 items-center">
         <span class="text-xl font-extrabold text-primary">Book Consultant</span>
