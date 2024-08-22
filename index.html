@@ -20,11 +20,15 @@
               fontFamily:{
                 manrope:["Manrope", "sans-serif"]
               },
+              fontSize:{
+                32: "32px",
+                28: "28px"
+              },
               colors:{
                 primary:"#212121",
                 secondary:"#494949",
                 third:"#737373",
-                secondary:"#",
+                warning:"#ABEF5F",
               },
               spacing:{
                 container: "1180px",
@@ -39,14 +43,44 @@
 <body class="font-manrope">
  <!-- header part -->
   <header>
-     <div class="max-w-container mx-auto">
-        <nav>
-            <div>
-                
+     <div class="max-w-container mx-auto p-2.5">
+      <!-- nav part start -->
+        <nav class="flex justify-between items-center">
+            <div class="w-8/12 md:w-3/12 flex space-x-2 lg:space-x-3 items-center">
+              <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center bg-warning rounded-full -rotate-45 text-xl"></i>
+              <h3 class="text-28 lg:text-32 font-extrabold text-primary">Rinterio</h3>
             </div>
-            <div></div>
-            <div></div>
+            <div class="hidden md:w-6/12 lg:block">
+              <ul class="flex justify-center space-x-8 text-base text-secondary font-extrabold">
+                <li><a href="" class="hover:text-third">Home</a></li>
+                <li><a href="" class="hover:text-third">Services</a></li>
+                <li><a href="" class="hover:text-third">Portfolio</a></li>
+                <li><a href="" class="hover:text-third">Blogs</a></li>
+                <li><a href="" class="hover:text-third">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="hidden md:w-8/12 lg:w-4/12 md:flex justify-center  space-x-1 md:space-x-2 items-center">
+              <i class="fa-solid fa-magnifying-glass w-10 h-10 flex justify-center items-center bg-white border-2 border-gray-400 rounded-full"></i>
+              <i class="fa-solid fa-cart-shopping w-10 h-10 flex justify-center items-center bg-white border-2 border-gray-400 rounded-full"></i>
+              <button class="py-3 px-5 rounded-[32px] bg-warning flex space-x-2 items-center">
+                <span class="text-xl font-extrabold text-primary">Book Consultant</span>
+                <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center rounded-full bg-[#1C1C1C] -rotate-45 text-white"></i>
+              </button>
+            </div>
+            <div class="w-4/12 md:w-1/12 lg:hidden flex justify-end">
+              <i class="fa-solid fa-bars w-10 h-10 flex justify-center items-center bg-white border-2 border-gray-400 rounded-full lg:hidden"></i>
+            </div>
          </nav>
+      <!-- nav part end -->
+
+       <!-- hero banner part start-->
+       <div>
+        <img src="images/banner.png" alt="banner_pic">
+        <h1>A barn house of this design has a striking appearance</h1>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+       </div>
+       <!-- hero banner part end -->
      </div>
   </header>
     
