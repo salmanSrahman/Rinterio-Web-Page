@@ -22,7 +22,11 @@
               },
               fontSize:{
                 32: "32px",
-                28: "28px"
+                28: "28px",
+                64: "64px"
+              },
+              lineHeight:{
+                26: "26px"
               },
               colors:{
                 primary:"#212121",
@@ -74,11 +78,14 @@
       <!-- nav part end -->
 
        <!-- hero banner part start-->
-       <div>
-        <img src="images/banner.png" alt="banner_pic">
-        <h1>A barn house of this design has a striking appearance</h1>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-
+       <div class="text-center pb-8">
+        <img src="images/banner.png" alt="banner_pic" class="mx-auto">
+        <h1 class="text-primary font-extrabold text-28 md:text-64 max-w-[1064px] mb-6">A barn house of this design has a striking appearance</h1>
+        <p class="text-secondary leading-26 textsm md:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="py-3 px-5 rounded-[32px] bg-warning/50 flex space-x-2 justify-center items-center mx-auto mt-8 w-full md:w-fit text-center">
+          <span class="text-xl font-bold md:font-extrabold text-primary">View Details</span>
+          <i class="fa-solid fa-arrow-right-long w-10 h-10 flex justify-center items-center rounded-full bg-warning -rotate-45 text-primary"></i>
+        </button>
        </div>
        <!-- hero banner part end -->
      </div>
