@@ -21,8 +21,9 @@
                 manrope:["Manrope", "sans-serif"]
               },
               fontSize:{
-                32: "32px",
                 28: "28px",
+                32: "32px",
+                40:"40px",
                 64: "64px"
               },
               lineHeight:{
@@ -33,6 +34,7 @@
                 secondary:"#494949",
                 third:"#737373",
                 warning:"#ABEF5F",
+                gray: "#F4F4F4"
               },
               spacing:{
                 container: "1180px",
@@ -45,7 +47,7 @@
 
 
 <body class="font-manrope">
- <!-- header part -->
+ <!-- header part start-->
   <header>
      <div class="max-w-container mx-auto p-2.5">
       <!-- nav part start -->
@@ -90,6 +92,57 @@
        <!-- hero banner part end -->
      </div>
   </header>
+  <!-- header part end -->
+
+  <main>
+
+  <!-- about us part start -->
+    <section class="about_us bg-gray py-8 md:py-24">
+      <div class="max-w-container mx-auto p-2.5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 gap-x-9 items-center">
+          <!-- about us text -->
+          <div class="relative">
+            <img src="images/Vector.png" alt="vector_logo" class="hidden md:block absolute -left-[42px] -top-8">
+            <button class="py-2 px-5 rounded-[32px] bg-white flex  items-center mt-8 text-center mb-4 text-secondary mx-auto md:mx-0">
+              <i class="fa-solid fa-arrow-right-long text-xl text-primary mr-1"></i>
+              <span class="text-base md:text-lg font-bold md:font-extrabold text-primary">About Us</span>
+            </button>
+            <h1 class=" font-bold text-2xl md:text-40 max-w-[477px] leading-[42px] mb-6">We design thoughtful, liveable spaces</h1>
+            <p class="text-secondary leading-26 textsm md:text-base mb-6">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <!-- about us card 1 -->
+              <div class="flex items-center space-x-6 py-3 px-6 rounded-xl bg-white mb-6">
+                <div>
+                 <img src="images/commercial.png" alt="commercial">
+                </div>
+                 <div>
+                    <h2 class="text-secondary text-xl font-extrabold mb-2">Commercial</h2>
+                    <p class="text-base font-medium text-third">The barn house captivates with its blend of rustic charm and modern.</p>
+                 </div>
+              </div>
+              <!-- about us card 2 -->
+              <div class="flex items-center space-x-6 py-3 px-6 rounded-xl bg-white">
+                <div>
+                 <img src="images/residential.png" alt="residential">
+                </div>
+                 <div>
+                    <h2 class="text-secondary text-xl font-extrabold mb-2">residential</h2>
+                    <p class="text-base font-medium text-third">The barn house captivates with its blend of rustic charm and modern.</p>
+                 </div>
+              </div>
+          </div>
+          <!-- about image -->
+          <div>
+            <img src="images/about.png" alt="building_pic">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  <!-- about us part end -->
+
+  
+   </main>
     
 </body>
 </html>
